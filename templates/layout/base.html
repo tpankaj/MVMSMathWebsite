@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {% block head %}
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="/static/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+    </style>
+    <link href="/static/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="/static/img/favicon.ico" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/static/ico/apple-touch-icon-144-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/static/ico/apple-touch-icon-114-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/static/ico/apple-touch-icon-72-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" href="/static/ico/apple-touch-icon-57-precomposed.png" />
+
+    <script src="/static/bootstrap/js/jquery.js" />
+    <script src="/static/bootstrap/js/bootstrap.min.js" />
+
+    <title>{% block title %}MVMS Math Club{% endblock %}</title>
+    {% endblock %}
+  </head>
+
+  <body>
+
+
+    <div class="container">
+
+      <div id="content">
+	{% block content %}{% endblock %}
+      </div>
+
+      <hr>
+
+      <footer>
+        <div id="copy">Copyright &copy; 2012 Mesa Verde Math Club</div>
+      </footer>
+
+    </div> <!-- /container -->
+
+  </body>
+</html>
