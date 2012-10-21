@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('index.html', current='index', user='Tushar Pankaj')
+    return render_template('index.html', current='index', user='Insert Username')
 
 @app.route('/<page>/')
 def go_to(page):
@@ -15,7 +15,7 @@ def go_to(page):
     pages.append('contact')
     for pageiterator in pages:
         if page == pageiterator:
-            return render_template('pages/%s.html' % page, current=page, user='Tushar Pankaj')
+            return render_template('pages/%s.html' % page, current=page, user='Insert Username')
     abort(404)
 
 def linkname(title):
